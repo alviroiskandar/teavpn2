@@ -51,7 +51,8 @@ jobs:
         libjson-glib-1.0-0:i386 libpango-1.0-0:i386 libpangocairo-1.0-0:i386 \
         libpangoft2-1.0-0:i386 librest-0.7-0:i386 gir1.2-pango-1.0:i386 \
         libharfbuzz-dev:i386 libpango-1.0-0:i386 libpangocairo-1.0-0:i386 \
-        libpangoft2-1.0-0:i386 libpangoxft-1.0-0:i386
+        libpangoft2-1.0-0:i386 libpangoxft-1.0-0:i386 libmount1:i386 \
+        libselinux1:i386 libmount-dev:i386 libselinux1-dev:i386;
 
     - name: Show tools version
       run: |
