@@ -53,7 +53,90 @@ jobs:
         libselinux1:i386 libmount1:i386 libselinux1:i386 libpcre2-dev:i386 \
         libatk-bridge2.0-dev libatk1.0-dev libcairo2-dev libgdk-pixbuf2.0-dev \
         libglib2.0-dev libpango1.0-dev libpcre2-8-0:i386 libpcre2-posix2:i386 \
-        libpcre2-8-0:i386 || true;
+        libpcre2-8-0:i386  openssl \
+        dconf-service:i386 \
+        dconf-service:i386 \
+        libatk-bridge2.0-0 \
+        libatspi2.0-dev \
+        libatk1.0-0 \
+        gir1.2-atk-1.0 \
+        pkg-config \
+        pkg-config:i386 \
+        libdbus-1-dev:i386 \
+        libcairo2:i386 \
+        libcairo2 \
+        libcairo-gobject2 \
+        libcairo-script-interpreter2 \
+        libfontconfig1-dev \
+        libcairo2:i386 \
+        libcairo-script-interpreter2:i386 \
+        libfontconfig1-dev:i386 \
+        libgssapi-krb5-2 \
+        shared-mime-info:i386 \
+        libgdk-pixbuf2.0-0 \
+        gir1.2-gdkpixbuf-2.0 \
+        shared-mime-info \
+        shared-mime-info:i386 \
+        libglib2.0-dev-bin \
+        pkg-config \
+        libglib2.0-dev-bin:i386 \
+        pkg-config:i386 \
+        adwaita-icon-theme:i386 \
+        shared-mime-info:i386 \
+        libcairo2:i386 \
+        libcups2:i386 \
+        libfontconfig1:i386 \
+        dconf-gsettings-backend \
+        gsettings-backend \
+        gir1.2-gtk-3.0 \
+        libfontconfig1-dev \
+        libwayland-dev \
+        pkg-config \
+        dconf-gsettings-backend \
+        gsettings-backend \
+        libgtk-3-0 \
+        libfontconfig1-dev:i386 \
+        libwayland-dev:i386 \
+        pkg-config:i386 \
+        libharfbuzz-icu0:i386 \
+        libicu-dev:i386 \
+        libgd3 \
+        libxml2 \
+        libxslt1.1 \
+        gir1.2-pango-1.0 \
+        libfontconfig1-dev \
+        libharfbuzz-dev \
+        libpango-1.0-0 \
+        libpangocairo-1.0-0 \
+        libpangoft2-1.0-0 \
+        libpangoxft-1.0-0 \
+        libthai-dev \
+        libxft-dev \
+        pango1.0-tools \
+        pkg-config \
+        libfontconfig1-dev:i386 \
+        libthai-dev:i386 \
+        libxft-dev:i386 \
+        pango1.0-tools:i386 \
+        pkg-config:i386 \
+        libcairo2:i386 \
+        libfontconfig1:i386 \
+        libfontconfig1:i386 \
+        libfontconfig1:i386 \
+        libxft2:i386 \
+        libpcre2-8-0 \
+        libpcre2-8-0:i386 \
+        libpcre2-dev \
+        libpcre2-16-0:i386 \
+        libpcre2-32-0:i386 \
+        Breaks: \
+        libpcre2-posix2 \
+        libpcre2-posix2:i386 \
+        libsoup-gnome2.4-1:i386 \
+        libsoup2.4-1:i386 \
+        libxml2:i386 \
+        libgssapi-krb5-2 \
+        login;
         sudo apt-get clean -y;
         sudo apt-get install -f;
         sudo dpkg --configure -a;
