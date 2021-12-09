@@ -66,9 +66,9 @@ if test "$USE_32_BIT" = "y"; then
   USER_CFLAGS="-m32 ${USER_CFLAGS}";
   USER_CXXFLAGS="-m32 ${USER_CXXFLAGS}";
   USER_LDFLAGS="-m32 ${USER_LDFLAGS}";
-  PKG_CONFIG=i386 pkg-config
+  PKG_CONFIG="i386 pkg-config"
 else
-  PKG_CONFIG=pkg-config
+  PKG_CONFIG="pkg-config"
 fi
 
 if test -z "$prefix"; then
