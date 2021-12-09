@@ -40,7 +40,7 @@ jobs:
     - name: Install tools
       run: |
         sudo aptitude install -y clang gcc g++ make gcc-multilib g++-multilib \
-        libgtk-3-common multiarch-support libgtk-3-dev libgtk-3-common:i386 \
+        libgtk-3-common libgtk-3-dev libgtk-3-common:i386 \
         libc6-dev-i386 libgtk-3-dev:i386 libc6:i386 libstdc++6:i386;
 
     - name: Show tools version
@@ -49,6 +49,7 @@ jobs:
         ${{matrix.cxx}} --version;
         make --version;
         i386 pkg-config --cflags --libs gtk+-3.0;
+        sudo find / -name 'i386';
         false;
 
     - name: Build (Debug Mode)
