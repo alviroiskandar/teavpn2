@@ -48,6 +48,7 @@ jobs:
         ${{matrix.cc}} --version;
         ${{matrix.cxx}} --version;
         make --version;
+        i386 pkg-config --libs --cflags gtk+-3.0
 
     - name: Build (Debug Mode)
       run: |
